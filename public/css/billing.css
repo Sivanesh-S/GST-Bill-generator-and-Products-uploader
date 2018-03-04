@@ -1,0 +1,18 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    overflow-x: none;
+}
+
+#bill {
+    min-height: 200px;
+    overflow: hidden;
+}
+
+td input {
+    width: 50%;
+}
+
+#bill h3 {
+    letter-spacing: 0.05em;
+}

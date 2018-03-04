@@ -1,0 +1,109 @@
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+
+    <nav class="pink">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">GST Biller</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/billing">Billing</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="input-field col s6">
+        <input id="product_code" type="text" class="validate">
+        <label for="product_code">Product code</label>
+    </div>
+    <div class="input-field col s6">
+        <input id="product_name" type="text" class="validate">
+        <label for="product_name">Product Name</label>
+    </div>
+    <div class="input-field col s6">
+        <input id="product_price" type="text" class="validate">
+        <label for="product_price">Product Price</label>
+    </div>
+    <div class="input-field col s6">
+        <input id="product_gst" type="text" class="validate">
+        <label for="product_gst">Product GST</label>
+    </div>
+
+    <a class="btn waves-effect waves-light" id="addList">Add List</a>
+
+    <hr>
+    <br>
+    <table class="centered">
+        <thead>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product GST</th>
+            </tr>
+        </thead>
+
+        <tbody id="dataList">
+            <!-- <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="public/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>
+<!-- 
+    Products Page (Home page)
+        Add new products to DB (MYSQL)
+        Fields are => 
+            Product code
+            Product Name
+            Product price
+            Product GST
+        List existing projects in database
+        List should have edit functionality
+    Billing page
+        Search box that allows to search a product using PRODUCT_CODE or PRODUCT_NAME
+        If a valid Product obtained then added to billing list
+        Staff should enter quantity
+        Total price with GST must be shown
+        Total price listed and showed
+        Total should Update automatically when changes occured
+    
+
+-->

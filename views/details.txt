@@ -1,0 +1,16 @@
+Products Page (Home page)
+        Add new products to DB (MYSQL)
+        Fields are => 
+            Product code
+            Product Name
+            Product price
+            Product GST
+        List existing projects in database
+        List should have edit functionality
+    Billing page
+        Search box that allows to search a product using PRODUCT_CODE or PRODUCT_NAME
+        If a valid Product obtained then added to billing list
+        Staff should enter quantity
+        Total price with GST must be shown
+        Total price listed and showed
+        Total should Update automatically when changes occured
